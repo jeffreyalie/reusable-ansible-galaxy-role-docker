@@ -1,0 +1,15 @@
+---
+docker_packages:
+  - docker-ce
+  - docker-ce-cli
+  - containerd.io
+
+docker_state: present
+docker_service_enabled: true
+docker_service_state: started
+
+docker_repo_url: https://download.docker.com/linux/ubuntu
+docker_gpg_url: https://download.docker.com/linux/ubuntu/gpg
+docker_gpg_dest: /etc/apt/keyrings/docker.gpg
+docker_arch: amd64
+docker_channel: stable
